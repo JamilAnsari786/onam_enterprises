@@ -1,0 +1,159 @@
+.footer {
+  background-color: #ffffff;
+  color: #333333;
+  padding: 40px 50px 20px;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+}
+
+.footer-title {
+  font-size: 26px;
+  color: #1877f2;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.footer-subtitle {
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #1877f2;
+}
+
+.footer-text {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333333;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* .footer-links a:hover {
+  background-color: #1877f2;
+  color: #ffffff;
+} */
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #444444;
+}
+
+.footer-contact svg {
+  color: #1877f2;
+}
+
+.newsletter {
+  display: flex;
+  margin-top: 10px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: none;
+  flex: 1;
+  font-size: 14px;
+  outline: none;
+  background: #ffffff;
+  color: #333;
+}
+
+.newsletter button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #1877f2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.newsletter button:hover {
+  background-color: #145ab5;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.footer-social a {
+  background-color: #e5e7eb;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background-color: #1877f2;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #888888;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+
+  .newsletter input,
+  .newsletter button {
+    width: 100%;
+    border-radius: 0;
+  }
+}

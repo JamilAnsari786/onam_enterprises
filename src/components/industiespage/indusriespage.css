@@ -1,0 +1,97 @@
+.industries-page {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.industries-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #1877F2;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+/* Grid Layout */
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Card Design */
+.industry-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 30px 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-color: #1877F2;
+}
+
+/* Icon Styling */
+.industry-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* Title */
+.industry-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1877F2;
+}
+
+/* Description */
+.industry-card p {
+  font-size: 16px;
+  color: #444;
+}
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-color: #1877F2;
+  background-color: #1877F2;
+  color: #ffffff;
+}
+
+.industry-card:hover h3,
+.industry-card:hover p,
+.industry-card:hover .industry-icon {
+  color: #ffffff;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .industry-card {
+    padding: 25px 15px;
+  }
+
+  .industry-icon {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,123 @@
+/* General Styles */
+.services-page {
+  padding: 10px 50px;
+  background-color: #ffffff;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  color: #333333;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-page h1 {
+  font-size: 36px;
+  color: #1877F2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.services-intro {
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #555555;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Service Card */
+.service-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect – only design change */
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(24, 119, 242, 0.2); /* Facebook Blue shadow */
+}
+
+/* Headings and Text */
+.service-card h2 {
+  font-size: 20px;
+  color: #1877F2;
+  margin-bottom: 10px;
+}
+
+.service-short {
+  font-size: 16px;
+  color: #444444;
+  margin-bottom: 15px;
+}
+
+.service-card h4 {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #222222;
+}
+
+.service-card ul {
+  margin-top: 8px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555555;
+}
+
+.service-card ul li {
+  margin-bottom: 6px;
+}
+
+/* CTA Button */
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #1877F2;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #145ab5;
+}
+
+/* Responsive Grid */
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-page {
+    padding: 40px 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+}
